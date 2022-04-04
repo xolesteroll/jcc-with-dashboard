@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4012debe1b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sign-in.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body class="sign-in d-flex flex-column h-100">
+    <div id="wrap" class="flex-shrink-0">
+        <div data-include="header"></div>
+
+        <section class="main">
+            <div class="main-banner">
+                <h1 class="main-title">
+                    Sign In to JCC Trust Portal
+                </h1>
+            </div>
+
+            <div class="main-form">
+                <div class="container">
+                    <div class="main-form__inner main-dialogue">
+                        <form class="main-form__form">
+                            <div class="main-form__controls">
+                                <div class="main-form__input-control input-control iconed login">
+                                    <label for="login">Username or Email Address</label>
+                                    <input type="text" name="login" placeholder="Username or Email Address">
+                                </div>
+                                <div class="main-form__input-control input-control iconed pass">
+                                    <label for="login">Password</label>
+                                    <input type="password" name="pass" placeholder="Password">
+                                </div>
+                                <div class="main-from__select-control select-control">
+                                    <select name="choose-lra" id="shose-lra">
+                                        <option value="" selected disabled hidden>Choose LRA</option>
+                                        <option value="0">LRA 1</option>
+                                        <option value="1">LRA 2</option>
+                                        <option value="2">LRA 3</option>
+                                        <option value="3">LRA 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="main-form__submit-btn primary submit-btn" type="submit">SIGN IN</button>
+                            <a class="main-form__link link inline" href="/forgot-password.html">Forgot Password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-include="footer" class="mt-auto"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./libs/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>

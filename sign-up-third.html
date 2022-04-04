@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://kit.fontawesome.com/4012debe1b.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sign-up-third.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body class="sign-up-third d-flex flex-column h-100">
+    <div id="wrap" class="flex-shrink-0">
+        <div data-include="header"></div>
+
+        <section class="main">
+            <div class="main-banner">
+                <h1 class="main-title">
+                    JCC Trust Portal Signup Form
+                </h1>
+            </div>
+
+            <div class="main-form">
+                <div class="container">
+                    <div class="main-form__inner main-dialogue">
+                        <div class="main-form__breadcrumbs">
+                            <span class="main-form__breadcrumbs-item active">1</span>
+                            <div class="main-form__breadcrumbs-spacer"></div>
+                            <span class="main-form__breadcrumbs-item passed">2</span>
+                            <div class="main-form__breadcrumbs-spacer"></div>
+                            <span class="main-form__breadcrumbs-item">3</span>
+                        </div>
+
+                        <form class="main-form__form">
+                            <p class="main-form__notice">*All fields are mandatory</p>
+                            <div class="main-form__controls">
+                                <h2 class="main-form__title">Security Question</h2>
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__select-control select-control w-100" style="max-width: 100%">
+                                        <select name="security-question-select" id="security-question-select">
+                                            <option value="0" selected>What primary schoold did you attend?</option>
+                                            <option value="1">Question</option>
+                                            <option value="2">Question</option>
+                                            <option value="3">Question</option>
+                                            <option value="4">Question</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 100%">
+                                        <label for="security-question-input">Security Question answer</label>
+                                        <input type="text" name="security-question-input"
+                                            placeholder="Security Question answer">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="main-form__controls">
+                                <h2 class="main-form__title">Account Details</h2>
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__select-control select-control w-100" style="max-width: 50%">
+                                        <select name="id-type-select" id="id-type-select">
+                                            <option value="" selected disabled hidden>Select ID type</option>
+                                            <option value="0">Id Type</option>
+                                            <option value="1">Id Type</option>
+                                            <option value="2">Id Type</option>
+                                            <option value="3">Id Type</option>
+                                        </select>
+                                    </div>
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 50%">
+                                        <label for="id-number">ID Number</label>
+                                        <input type="text" name="id-number" placeholder="ID Number">
+                                        <p class="input-control__notice">As stated in your Identity or Passport</p>
+                                    </div>
+                                </div>
+
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__input-control input-control w-100 iconed pass with-popup"
+                                        style="max-width: 50%">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" placeholder="Password">
+                                        <div class="input-popup hidden">
+                                            <ul class="input-popup__list">
+                                                <li class="valid">Min 8 Characters</li>
+                                                <li class="valid">Upper case characters (A-Z)</li>
+                                                <li class="valid">Lower case characters (a-z)</li>
+                                                <li class="valid">Numbers (0-9)</li>
+                                                <li class="valid">Special characters (e.g., ! $ # %)</li>
+                                                <li class="valid">Unicode characters that do not fall into any of the above category</li>
+                                                <li class="valid">Does not include User name, Display name or E-mail</li>
+                                            </ul>
+                                        </div>
+                                        <i class="popup-trigger fa-solid fa-circle-info"></i>
+                                    </div>
+                                    <div class="main-form__input-control input-control w-100 iconed pass with-popup"
+                                        style="max-width: 50%">
+                                        <label for="pasword-repeat">Repeat Password</label>
+                                        <input type="password" name="pasword-repeat" placeholder="repeat Password">
+                                        <div class="input-popup hidden">
+                                            <ul class="input-popup__list">
+                                                <li class="valid">Min 8 Characters</li>
+                                                <li class="valid">Upper case characters (A-Z)</li>
+                                                <li class="valid">Lower case characters (a-z)</li>
+                                                <li class="valid">Numbers (0-9)</li>
+                                                <li class="valid">Special characters (e.g., ! $ # %)</li>
+                                                <li class="valid">Unicode characters that do not fall into any of the above category</li>
+                                                <li class="valid">Does not include User name, Display name or E-mail</li>
+                                            </ul>
+                                        </div>
+                                        <i class="popup-trigger fa-solid fa-circle-info"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-form__controls">
+                                <h2 class="main-form__title">Legal</h2>
+
+                                <div class="main-form__acceptance">
+                                    <h4 class="main-form__acceptance-title">
+                                        Please scroll down to accept the Terms and Conditions.
+                                    </h4>
+
+                                    <div class="main-form__acceptance-terms">
+                                        <p>
+                                            General Terms and Conditions for Use of Certificates
+
+                                            Date: 01 April 2020 Version: 1.3 Document Owner: QTSP Policy Officer
+
+                                            Present General Terms and Conditions describe main policies and practices
+                                            followed by JCC Payment Systems and provided in CP and CPS, that are also
+                                            described in a supplemental and simplified way in the PKI Disclosure
+                                            Statement (PDS), for authentication certificates and for EU Qualified
+                                            certificates for electronic signatures & electronic seals.1.1. The Terms and
+                                            Conditions govern Subscribers' use of the Certificates and constitute a
+                                            legally binding contract
+                                            General Terms and Conditions for Use of Certificates
+
+                                            Date: 01 April 2020 Version: 1.3 Document Owner: QTSP Policy Officer
+
+                                            Present General Terms and Conditions describe main policies and practices
+                                            followed by JCC Payment Systems and provided in CP and CPS, that are also
+                                            described in a supplemental and simplified way in the PKI Disclosure
+                                            Statement (PDS), for authentication certificates and for EU Qualified
+                                            certificates for electronic signatures & electronic seals.1.1. The Terms and
+                                            Conditions govern Subscribers' use of the Certificates and constitute a
+                                            legally binding contract
+                                        </p>
+                                    </div>
+
+                                    <div class="main-form__checkbox-control checkbox-control">
+                                        <label for="terms-conditions">I have read and accept the Terms and
+                                            Conditions.
+                                            <input name="terms-conditions" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="main-form__acceptance">
+                                    <h4 class="main-form__acceptance-title">
+                                        Please scroll down to accept the Privacy Statement.
+                                    </h4>
+
+                                    <div class="main-form__acceptance-terms">
+                                        <p>
+                                            QTSP PRIVACY STATEMENT FOR THE PROTECTION
+                                            OF PERSONAL DATA & GENERAL INFORMATION Version 1.2
+
+                                            This Privacy Statement aims to give you information on how JCC Payments
+                                            Systems Ltd(referred to as 'we', 'us', 'our', 'JCC Payment Systems' or
+                                            'JCC') collects, uses, discloses and processes your personal data through
+                                            your use of the https://trust.jcc.com.cy and https://pki.jcc.com.cy
+                                            (hereinafter referred to as "the Websites") and the means by which this is
+                                            done. The Privacy Statement as a means of notifying the website visitors of
+                                            their rights in accordance with local law and the EU General Data Protection
+                                            Regulation (EU) 2016/679. JCC Payment Systems Ltd is committed to
+                                            QTSP PRIVACY STATEMENT FOR THE PROTECTION
+                                            OF PERSONAL DATA & GENERAL INFORMATION Version 1.2
+
+                                            This Privacy Statement aims to give you information on how JCC Payments
+                                            Systems Ltd(referred to as 'we', 'us', 'our', 'JCC Payment Systems' or
+                                            'JCC') collects, uses, discloses and processes your personal data through
+                                            your use of the https://trust.jcc.com.cy and https://pki.jcc.com.cy
+                                            (hereinafter referred to as "the Websites") and the means by which this is
+                                            done. The Privacy Statement as a means of notifying the website visitors of
+                                            their rights in accordance with local law and the EU General Data Protection
+                                            Regulation (EU) 2016/679. JCC Payment Systems Ltd is committed to
+                                        </p>
+                                    </div>
+
+                                    <div class="main-form__checkbox-control checkbox-control">
+
+                                        <label for="privacy-policy">I have read and accept the Privacy
+                                            Statement.
+                                            <input name="privacy-policy" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+                                </div>
+
+                                <div>
+                                    RECAPCHA
+                                </div>
+
+                            </div>
+                            <button type="submit" class="button submit-btn">SIGN UP</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-include="footer" class="mt-auto"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./libs/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>

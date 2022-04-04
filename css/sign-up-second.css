@@ -1,0 +1,17 @@
+.sign-up-second {
+		background-color: #f4f4f4;
+}
+
+.main-banner {
+		background-image: url(../assets/images/main-banner-bg-nohp.jpg);
+}
+.main-form__form {
+		max-width: 770px;
+}
+.main-form__controls {
+		margin-bottom: 18px;
+}
+.main-form .submit-btn {
+		max-width: 170px;
+		margin-left: auto;
+}

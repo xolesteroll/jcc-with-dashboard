@@ -1,0 +1,29 @@
+.sign-up-third {
+    background-color: #f4f4f4;
+}
+
+.main {
+    &-banner {
+        background-image: url(../assets/images/main-banner-bg-nohp.jpg);
+    }
+    &-form {
+        &__form {
+            max-width: 770px;
+        }
+        &__controls {
+            margin-bottom: 18px;
+        }
+        &__select-control,
+        &__input-control {
+            margin: 10px 0;
+        }
+        &__checkbox-control {
+            text-align: left;
+            padding: 15px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            column-gap: 15px;
+        }
+    }
+}

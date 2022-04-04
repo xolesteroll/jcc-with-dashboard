@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://kit.fontawesome.com/4012debe1b.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vars.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sign-up-second.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body class="sign-up-second d-flex flex-column h-100">
+    <div id="wrap" class="flex-shrink-0">
+        <div data-include="header"></div>
+
+        <section class="main">
+            <div class="main-banner">
+                <h1 class="main-title">
+                    JCC Trust Portal Signup Form
+                </h1>
+            </div>
+
+            <div class="main-form">
+                <div class="container">
+                    <div class="main-form__inner main-dialogue">
+                        <div class="main-form__breadcrumbs">
+                            <span class="main-form__breadcrumbs-item passed">1</span>
+                            <div class="main-form__breadcrumbs-spacer"></div>
+                            <span class="main-form__breadcrumbs-item active">2</span>
+                            <div class="main-form__breadcrumbs-spacer"></div>
+                            <span class="main-form__breadcrumbs-item">3</span>
+                        </div>
+
+                        <form class="main-form__form">
+                            <h2 class="main-form__title">Account Information</h2>
+                            <p class="main-form__notice">*All fields are mandatory</p>
+                            <div class="main-form__controls">
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 50%">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" placeholder="Username">
+                                    </div>
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 50%">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__select-control select-control w-100" style="max-width: 13%">
+                                        <select name="title-select" id="title-select">
+                                            <option value="" selected disabled hidden>Title</option>
+                                            <option value="0">LRA 1</option>
+                                            <option value="1">LRA 2</option>
+                                            <option value="2">LRA 3</option>
+                                            <option value="3">LRA 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 45%">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" placeholder="Username">
+                                        <p class="input-control__notice">Name as stated in your Identity or Passport</p>
+                                    </div>
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 45%">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" name="email" placeholder="Email Address">
+                                        <p class="input-control__notice">Surname as stated in your Identity or Passport</p>
+                                    </div>
+                                </div>
+
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__select-control select-control w-100" style="max-width: 100%">
+                                        <select name="country-select" id="country-select">
+                                            <option value="" selected disabled hidden>Country</option>
+                                            <option value="0">LRA 1</option>
+                                            <option value="1">LRA 2</option>
+                                            <option value="2">LRA 3</option>
+                                            <option value="3">LRA 4</option>
+                                        </select>
+                                        <p class="input-control__notice">Country of issue as stated in your Identity or Passport</p>
+                                    </div>
+                                </div>
+
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 75%">
+                                        <label for="address">Address</label>
+                                        <input type="text" name="address" placeholder="Address">
+                                    </div>
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 25%">
+                                        <label for="postcode">Postal Code</label>
+                                        <input type="text" name="postcode" placeholder="Postal Code">
+                                    </div>
+                                </div>
+
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__select-control select-control w-100" style="max-width: 25%">
+                                        <label for="country-code-select">Fixed Phone Number (Optional)</label>
+                                        <select name="country-code-select" id="country-code-select">
+                                            <option value="" selected disabled hidden>Select Country Code</option>
+                                            <option value="0">Country code</option>
+                                            <option value="1">Country code</option>
+                                            <option value="2">Country code</option>
+                                            <option value="3">Country code</option>
+                                        </select>
+                                    </div>
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 75%">
+                                        <label for="phone">Phone number</label>
+                                        <input type="tel" name="phone" placeholder="Phone number">
+                                    </div>
+                                </div>
+
+                                <div class="main-form__row d-flex w-100 justify-content-between">
+                                    <div class="main-form__select-control select-control w-100" style="max-width: 25%">
+                                        <label for="country-code-select-2">Mobile Phone Number</label>
+                                        <select name="country-code-select-2" id="country-code-select-2">
+                                            <option value="" selected disabled hidden>Select Country Code</option>
+                                            <option value="0">Country code</option>
+                                            <option value="1">Country code</option>
+                                            <option value="2">Country code</option>
+                                            <option value="3">Country code</option>
+                                        </select>
+                                    </div>
+                                    <div class="main-form__input-control input-control w-100" style="max-width: 75%">
+                                        <label for="phone">Phone number</label>
+                                        <input type="tel" name="phone" placeholder="Phone number">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="button submit-btn">NEXT <i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div data-include="footer" class="mt-auto"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+        integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./libs/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+
+</html>

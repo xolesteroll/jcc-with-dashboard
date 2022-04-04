@@ -1,0 +1,235 @@
+@charset "UTF-8";
+.sign-up-first {
+		background-color: #f4f4f4;
+}
+
+.main-banner {
+		background-image: url(../assets/images/main-banner-bg-nohp.jpg);
+}
+.main-form__texts {
+		max-width: 750px;
+		margin: 0 auto 80px;
+}
+.main-form__title {
+		position: relative;
+		margin-bottom: 50px;
+		text-align: center;
+}
+.main-form__title::before {
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 1px;
+		background-color: var(--primary-color);
+		left: 50%;
+		bottom: -23px;
+		transform: translateX(-50%);
+}
+.main-form__subtitle {
+		margin-bottom: 30px;
+}
+.main-form__providers-notice {
+		margin-bottom: 10px;
+}
+.main-form__providers-inner {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 30px;
+		column-gap: 30px;
+		padding-bottom: 60px;
+		border-bottom: 1px solid #cdcdcd;
+}
+@media screen and (max-width: 1350px) {
+		.main-form__providers-inner {
+				justify-content: center;
+		}
+}
+.main-form__providers-item {
+		max-width: 370px;
+		width: 100%;
+		background-color: #ffffff;
+		border: 1px solid #cdcdcd;
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+		border-radius: 4px;
+}
+.main-form__providers-img {
+		min-height: 196px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid #cdcdcd;
+}
+.main-form__providers-btn {
+		width: 100%;
+		max-height: 46px;
+		border: none;
+		border-radius: 0 0 4px 4px;
+		font-family: "Roboto Condensed", sans-serif;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 13px 5px;
+		text-transform: uppercase;
+		color: var(--primary-color);
+		outline: 0px solid transparent;
+}
+.main-form__providers-btn:hover {
+		background-color: var(--primary-color);
+		color: #ffffff;
+}
+.main-form__providers-btn.chosen {
+		font-size: 0;
+}
+.main-form__providers-btn.chosen::before {
+		font-family: "FontAwesome";
+		content: "";
+		color: var(--primary-color);
+		font-size: 14px;
+		line-height: 20px;
+		border: 1px solid var(--primary-color);
+		border-radius: 50%;
+		padding: 5px;
+}
+.main-form__providers-btn.chosen:hover {
+		background-color: #fff;
+}
+.main-form__table {
+		padding: 45px 0;
+		overflow-x: auto;
+}
+.main-form__table-title {
+		text-align: left;
+		padding: 0 0 13px;
+}
+.main-form__table-table {
+		width: 100%;
+		min-width: 1150px;
+		border: 1px solid #cdcdcd;
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+		border-radius: 4px;
+}
+.main-form__table-table th {
+		padding: 15px 5px;
+		font-family: "Roboto", sans-serif;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		color: #333333;
+}
+.main-form__table-table td .table-logo {
+		height: 35px;
+		margin-left: 50px;
+}
+.main-form__table-table td.img-col {
+		text-align: left;
+}
+.main-form__table-table td.subheader {
+		padding: 10px 0;
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: #333333;
+}
+.main-form__table-table td[data-checked] {
+		position: relative;
+		font-size: 0;
+}
+.main-form__table-table td[data-checked]::before {
+		font-family: "FontAwesome";
+		content: "";
+		color: #ffffff;
+		background-color: var(--primary-color);
+		font-size: 14px;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+.main-form__table-table td[data-ebanking] {
+		position: relative;
+		font-size: 0;
+}
+.main-form__table-table td[data-ebanking]::before {
+		content: "Via eBanking";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 600;
+		padding: 9px 5px;
+		width: 90%;
+		color: var(--main-text-color);
+		background-color: #2ac40018;
+		border-radius: 4px;
+}
+.main-form__table-table tr {
+		border-bottom: 1px solid #e7e7e7;
+}
+.main-form__table-table tr.fold-row {
+		display: none;
+		text-align: left;
+}
+.main-form__table-table tr.fold-row.open {
+		display: table-row;
+}
+.main-form__table-table tr.fold-row .fold-row__inner-list {
+		padding-left: 25px;
+}
+.main-form__table-table tr.fold-row .fold-row__list-item {
+		margin-bottom: 20px;
+}
+.main-form__table-table tr.white {
+		background-color: #ffffff;
+		position: relative;
+}
+.main-form__table-table tr.white td {
+		padding: 25px 5px;
+}
+.main-form__table-table tr.white.view-row {
+		cursor: pointer;
+}
+.main-form__table-table tr.white::before {
+		position: absolute;
+		font-family: "FontAwesome";
+		content: "";
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: 700;
+		color: var(--primary-color);
+		left: 15px;
+		top: 50%;
+		transform: translateY(-50%);
+}
+.main-form__table-table tr.white.open::before {
+		content: "";
+}
+.main-form__table-table tr.heading::before {
+		visibility: hidden;
+}
+.main-form__table-table tr.transparent {
+		background-color: transparent;
+}
+.main-form__table-table tr .fold-row__inner {
+		width: 100%;
+		justify-content: space-between;
+		padding: 30px;
+}
+.main-form__table-table tr .fold-row__text-box {
+		margin-bottom: 40px;
+}
+.main-form__table-table tr .fold-row__col {
+		max-width: 540px;
+		width: 100%;
+}
+.main-form__table-table tr .contacts {
+		margin-bottom: 30px;
+}

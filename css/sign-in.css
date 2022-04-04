@@ -1,0 +1,25 @@
+.sign-in {
+		background-color: #f4f4f4;
+}
+
+.main-banner {
+		background-image: url(../assets/images/main-banner-bg-nohp.jpg);
+}
+.main-form__inner {
+		background-color: #f4f4f4;
+}
+@media screen and (max-width: 765px) {
+		.main-form__inner {
+				padding: 20px 0;
+		}
+}
+@media screen and (max-width: 765px) {
+		.main-form__form {
+				padding: 0 20px;
+		}
+}
+@media screen and (max-width: 340px) {
+		.main-form__form {
+				padding: 0 10px;
+		}
+}

@@ -1,0 +1,146 @@
+
+
+$notebook: 1350px;
+$tablet: 1025px;
+$phone: 765px;
+$small-phone: 450px;
+$smallest-phone: 340px;
+
+.header {
+    position: relative;
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.07);
+    @media screen and (max-width: $small-phone) {
+        min-height: 80px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: var(--primary-color);
+    }
+    &-logo {
+        img {
+            @media screen and (max-width: $small-phone) {
+                max-width: 150px;
+            }
+        }
+    }
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-nav {
+        column-gap: 45px;
+        align-items: center;
+        @media screen and (max-width: $tablet) {
+            column-gap: 15px;
+        }
+        li a {
+            color: var(--main-text-color);
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &__list {
+            display: flex;
+            column-gap: 40px;
+            width: 100%;
+            @media screen and (max-width: $tablet) {
+                transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                display: block;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                z-index: 100;
+                transform: translateX(100%);
+                text-align: center;
+                background-color: #FFFFFF;
+                border-bottom: 3px solid var(--primary-color);
+                li a {
+                    padding: 15px 5px;
+                    width: 100%;
+                    &:hover {
+                        color: #FFFFFF;
+                        background-color: var(--primary-color);
+                    }
+                }
+                &.active {
+                    transform: translateX(0);
+                }
+            }
+        }
+        &__lang {
+            &-list {
+                column-gap: 8px;
+            }
+            li {
+                display: flex;
+                align-items: center;
+            }
+            &-link {
+                width: 23px;
+                height: 23px;
+                border-radius: 50%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 0.25;
+                transition: opacity 0.2s;
+                &:hover {
+                    opacity: 1;
+                }
+                &.eng {
+                    background-image: url(../assets/images/lang-image-eng.png);
+                }
+                &.gr {
+                    background-image: url(../assets/images/lang-image-gr.png);
+                }
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+        &__toggle-btn {
+            border: none;
+            padding: 2px;
+            div {
+                width: 25px;
+                height: 2px;
+                background-color: var(--main-text-color);
+                transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+                & + div {
+                    margin-top: 4px;
+                }
+                
+            }
+            &.active {
+                div {
+                    &:first-child {
+                        transform: translate(0px, 6px) rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                        transform: translateX(1000%);
+                    }
+                    &:last-child {
+                        transform: translate(0px, -5px) rotate(-45deg);
+                    }
+                }
+            }
+            &:focus {
+                outline: 1px solid transparent;
+            }
+            @media screen and (min-width: $tablet) {
+                display: none;
+            }
+        } 
+    }
+}

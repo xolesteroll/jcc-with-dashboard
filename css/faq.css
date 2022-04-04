@@ -1,0 +1,16 @@
+.sign-up-third {
+		background-color: #f4f4f4;
+}
+
+.main-banner {
+		background-image: url(../assets/images/main-banner-bg-nohp.jpg);
+}
+.main-form__form {
+		max-width: 770px;
+}
+.main-form__controls {
+		margin-bottom: 18px;
+}
+.main-form__select-control, .main-form__input-control {
+		margin: 10px 0;
+}
