@@ -209,7 +209,7 @@ $smallest-phone: 340px;
                 > a {
                     background-image: none;
                 }
-                &:hover {
+                &:hover:not(.sub-menu) {
                     color: #000000;
                     .sub-menu {
                         opacity: 1;

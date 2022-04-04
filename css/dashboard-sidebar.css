@@ -186,10 +186,10 @@
 .sidebar.collapsed .sidebar-nav__item.with-sub-menu > a {
 		background-image: none;
 }
-.sidebar.collapsed .sidebar-nav__item.with-sub-menu:hover {
+.sidebar.collapsed .sidebar-nav__item.with-sub-menu:hover:not(.sub-menu) {
 		color: #000000;
 }
-.sidebar.collapsed .sidebar-nav__item.with-sub-menu:hover .sub-menu {
+.sidebar.collapsed .sidebar-nav__item.with-sub-menu:hover:not(.sub-menu) .sub-menu {
 		opacity: 1;
 }
 .sidebar.collapsed .sidebar-nav__item.with-sub-menu.expanded > a:not(:active) svg path {
