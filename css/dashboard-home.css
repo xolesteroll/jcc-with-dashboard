@@ -1,0 +1,117 @@
+.dashboard-info {
+		margin-bottom: 30px;
+}
+.dashboard-info__inner {
+		display: flex;
+		justify-content: space-between;
+}
+.dashboard-info__box {
+		max-width: 503px;
+		width: 100%;
+		text-align: center;
+		padding: 30px 15px 37px;
+}
+.dashboard-info__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 150px;
+		height: 150px;
+		border: 1px solid #cdcdcd;
+		border-radius: 50%;
+		margin: 0 auto 20px;
+}
+.dashboard-info__title {
+		padding-bottom: 20px;
+		margin-bottom: 19px;
+		position: relative;
+}
+.dashboard-info__title::after {
+		content: "";
+		position: absolute;
+		width: 60px;
+		height: 1px;
+		background-color: var(--primary-color);
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+}
+.dashboard-info__description {
+		max-width: 360px;
+		margin: 0 auto;
+		padding: 0 20px;
+		min-height: 66px;
+		margin-bottom: 25px;
+}
+
+.dashboard-notifications__header {
+		display: flex;
+		justify-content: space-between;
+		padding: 12px 15px;
+		background-color: #ffffff;
+		border-radius: 5px 5px 0 0;
+}
+.dashboard-notifications__title {
+		margin-bottom: 0;
+}
+.dashboard-notifications__title i {
+		font-size: 16px;
+		line-height: 16px;
+		color: var(--primary-color);
+		margin-right: 5px;
+}
+.dashboard-notifications__tabs {
+		border-width: 1px 0;
+		border-color: #E7E7E7;
+		border-style: solid;
+		background-color: #F4F4F4;
+}
+.dashboard-notifications__tabs-btn {
+		width: 130px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 20px;
+		color: var(--secondary-text-color);
+		padding: 12px 0 10px;
+}
+.dashboard-notifications__tabs-btn.active {
+		color: var(--primary-color);
+		position: relative;
+}
+.dashboard-notifications__tabs-btn.active::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: -1px;
+		left: 0;
+		background-color: var(--primary-color);
+}
+.dashboard-notifications__item {
+		position: relative;
+		padding: 20px 15px 18px 40px;
+}
+.dashboard-notifications__item::before {
+		content: "";
+		position: absolute;
+		left: 14px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: #cdcdcd;
+}
+.dashboard-notifications__item + .dashboard-notifications__item {
+		border-top: 1px solid #e7e7e7;
+}
+.dashboard-notifications__item-text {
+		max-width: 710px;
+		line-height: 18px;
+}
+.dashboard-notifications__item.unread::before {
+		background-color: var(--primary-color);
+}
+.dashboard-notifications__item.unread .dashboard-notifications__item-text {
+		font-weight: 700;
+}

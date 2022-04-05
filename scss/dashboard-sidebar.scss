@@ -9,7 +9,8 @@ $smallest-phone: 340px;
     width: 100%;
     min-height: 100vh;
     padding: 34px 15px 15px 22px;
-    border: 1px solid #000000; // temportary
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
     transition: max-width 0.3s;
     &-header {
         display: flex;
@@ -78,6 +79,7 @@ $smallest-phone: 340px;
             }
         }
         &__item {
+            transition: margin 0.2s;
             &:not(.sub-menu-item) {
                 margin-left: -6px;
             }
@@ -96,7 +98,7 @@ $smallest-phone: 340px;
                 font-weight: 700;
                 line-height: 48px;
                 color: var(--main-text-color);
-                transition: background-color 0.2s;
+                transition: background-color 0.2s, padding 0.3s;
                 border-radius: 5px;
                 padding: 0 10px;
                 svg {
@@ -119,7 +121,7 @@ $smallest-phone: 340px;
                     .sub-menu {
                         max-height: 0;
                         padding-top: 0;
-                        transition: max-height 0.3s ease-out, padding-top 0.3s ease-out;
+                        transition: max-height 0.3s ease-out, padding-top 0.3s ease-out, opacity 0.2s ease-in;
                     }
                 }
                 &.expanded {
@@ -136,9 +138,6 @@ $smallest-phone: 340px;
                 }
             }
         }
-        &__text {
-            transition: font-size 0.2s ease-in;
-        }
     }
     &.collapsed {
         max-width: 75px;
@@ -152,8 +151,6 @@ $smallest-phone: 340px;
         .sidebar-logo {
             &__expanded {
                 display: none;
-            }
-            &__collapsed {
             }
         }
         .sidebar-btn {
@@ -170,24 +167,17 @@ $smallest-phone: 340px;
         .sidebar-nav__item {
             margin-left: 0;
             position: relative;
-            .sub-menu {
+            .sub-menu-wrapper {
                 position: absolute;
                 z-index: 1;
                 left: 3px;
                 bottom: -10px;
                 transform: translateY(100%);
-                width: 320px;
-                max-height: auto;
-                // overflow: visible;
-                opacity: 0;
                 background-color: #ffffff;
+                width: 320px;
                 border-radius: 4px;
                 box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-                padding: 22px 22px 22px 60px;
-                &-item {
-                    max-width: 257px;
-                    width: 100%;
-                }
+                padding: 11px 16px 5px 0;
             }
             a:not(.sub-menu-link) {
                 justify-content: center;
@@ -209,18 +199,23 @@ $smallest-phone: 340px;
                 > a {
                     background-image: none;
                 }
-                &:hover:not(.sub-menu) {
-                    color: #000000;
-                    .sub-menu {
-                        opacity: 1;
-                    }
-                }
                 &.expanded {
                     > a:not(:active) {
+                        background-color: #f4f4f4;
+
                         svg path {
                             fill: #cdcdcd;
                         }
                     }
+                }
+            }
+            &.collapsed {
+                .sub-menu {
+                    transition: padding 0s, max-height 0s;
+
+                }
+                .sub-menu-wrapper {
+                    padding: 0;
                 }
             }
         }
@@ -230,11 +225,13 @@ $smallest-phone: 340px;
     }
     &.expanded {
         .sidebar-logo {
-            &__expanded {
-            }
             &__collapsed {
                 display: none;
             }
+        }
+        .sidebar-nav__text {
+            transition: font-size 0.4s cubic-bezier(1,-0.04,0,1.01);
+
         }
     }
 }

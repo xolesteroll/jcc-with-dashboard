@@ -1,0 +1,107 @@
+.dashboard-container {
+		max-width: 1600px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 15px;
+}
+
+main.dashboard-content {
+		width: 100%;
+		background-image: url(../assets/images/main-content-bg.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding-top: 28px;
+}
+main.dashboard-content button {
+		background-color: transparent;
+		border: none;
+}
+main.dashboard-content button:focus {
+		outline: none;
+}
+
+.dashboard-box {
+		background: #ffffff;
+		box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+		border-radius: 5px;
+}
+
+.dashboard-header {
+		margin-bottom: 35px;
+}
+
+.dashboard-nav {
+		display: flex;
+		justify-content: end;
+		column-gap: 25px;
+}
+.dashboard-nav__item.account {
+		display: flex;
+		align-items: center;
+		column-gap: 9px;
+}
+.dashboard-nav__item.notifications {
+		position: relative;
+		font-size: 24px;
+		line-height: 24px;
+}
+.dashboard-nav__item.notifications .notifications-bubble {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: -9px;
+		right: 1px;
+		width: 17px;
+		height: 17px;
+		border-radius: 50%;
+		background-color: #f11313;
+		color: #ffffff;
+		font-size: 9px;
+		font-weight: 700;
+		line-height: 12px;
+}
+.dashboard-nav__lang {
+		display: flex;
+		align-items: center;
+		border-width: 0px 1px;
+		border-color: #cdcdcd;
+		border-style: solid;
+		padding: 0 25px;
+}
+.dashboard-nav__lang-list {
+		column-gap: 8px;
+}
+.dashboard-nav__lang li {
+		display: flex;
+		align-items: center;
+}
+.dashboard-nav__lang-link {
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		opacity: 0.25;
+		transition: opacity 0.2s;
+}
+.dashboard-nav__lang-link:hover {
+		opacity: 1;
+}
+.dashboard-nav__lang-link.eng {
+		background-image: url(../assets/images/lang-image-eng.png);
+}
+.dashboard-nav__lang-link.gr {
+		background-image: url(../assets/images/lang-image-gr.png);
+}
+.dashboard-nav__lang-link.active {
+		opacity: 1;
+}
+.dashboard-nav__text {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 16px;
+		color: var(--main-text-color);
+}

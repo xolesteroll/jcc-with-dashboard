@@ -1,43 +1,42 @@
 $(document).ready(function () {
 
   $(function () {
-    const includes = $('[data-include]')
+    const includes = $('[data-include]');
     $.each(includes, function () {
-      const file = $(this).data('include') + '.html'
-      $(this).load(file)
-    })
-  })
+      const file = $(this).data('include') + '.html';
+      $(this).load(file);
+    });
+  });
 
   $("tr.view-row").on("click", function () {
     $(this).toggleClass("open").next(".fold-row").toggleClass("open");
   });
 
   $(".popup-trigger").mouseenter(function () {
-    $(this).prev(".input-popup").removeClass('hidden')
-  })
+    $(this).prev(".input-popup").removeClass('hidden');
+  });
 
   $(".popup-trigger").mouseleave(function () {
-    $(this).prev(".input-popup").addClass("hidden")
-  })
+    $(this).prev(".input-popup").addClass("hidden");
+  });
 
   $(".faq-list__item").on("click", function () {
-    $(this).toggleClass("opened")
-  })
+    $(this).toggleClass("opened");
+  });
 
 
 
 
-  const inputs = document.querySelectorAll("input")
+  const inputs = document.querySelectorAll("input");
 
   inputs.forEach(input => {
     input.addEventListener("focus", () => {
-      console.log('focus')
-      input.parentElement.classList.add("active")
-    })
+      input.parentElement.classList.add("active");
+    });
     input.addEventListener("blur", () => {
-      input.parentElement.classList.remove("active")
-    })
-  })
+      input.parentElement.classList.remove("active");
+    });
+  });
 
   // Custom Select styles
   let x, i, j, l, ll, selElmnt, a, b, c;
