@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-  $(function () {
-    const includes = $('[data-include]');
-    $.each(includes, function () {
-      const file = $(this).data('include') + '.html';
-      $(this).load(file);
-    });
-  });
-
   $("tr.view-row").on("click", function () {
     $(this).toggleClass("open").next(".fold-row").toggleClass("open");
   });

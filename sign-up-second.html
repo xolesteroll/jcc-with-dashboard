@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="https://kit.fontawesome.com/4012debe1b.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="./js/include-html.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./libs/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/vars.css">
     <link rel="stylesheet" href="./css/fonts.css">
@@ -19,7 +21,7 @@
 
 <body class="sign-up-second d-flex flex-column h-100">
     <div id="wrap" class="flex-shrink-0">
-        <div data-include="header"></div>
+        <div w3-include-html="header.html"></div>
 
         <section class="main">
             <div class="main-banner">
@@ -72,7 +74,8 @@
                                     <div class="main-form__input-control input-control w-100" style="max-width: 45%">
                                         <label for="email">Email Address</label>
                                         <input type="email" name="email" placeholder="Email Address">
-                                        <p class="input-control__notice">Surname as stated in your Identity or Passport</p>
+                                        <p class="input-control__notice">Surname as stated in your Identity or Passport
+                                        </p>
                                     </div>
                                 </div>
 
@@ -85,7 +88,8 @@
                                             <option value="2">LRA 3</option>
                                             <option value="3">LRA 4</option>
                                         </select>
-                                        <p class="input-control__notice">Country of issue as stated in your Identity or Passport</p>
+                                        <p class="input-control__notice">Country of issue as stated in your Identity or
+                                            Passport</p>
                                     </div>
                                 </div>
 
@@ -134,7 +138,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" class="button submit-btn">NEXT <i class="fa-solid fa-arrow-right"></i></button>
+                            <button type="submit" class="button submit-btn">NEXT <i
+                                    class="fa-solid fa-arrow-right"></i></button>
                         </form>
                     </div>
 
@@ -144,13 +149,13 @@
         </section>
     </div>
 
-    <div data-include="footer" class="mt-auto"></div>
+    <div w3-include-html="footer.html" class="mt-auto"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
         integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./libs/js/bootstrap.bundle.min.js"></script>
-        <script src="./js/main.js"></script>
+    <script src="./libs/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
